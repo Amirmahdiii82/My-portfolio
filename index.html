@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amir Mahdi - Portfolio</title>
+    <link rel="icon" type="images/logo.png" href="images/logo.png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -13,11 +14,15 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <a href="#home">Amir Mahdi</a>
+                <a href="#home">
+                    <img src="images/logo.png" alt="Amir Mahdi Logo" class="nav-logo">
+                    <span class="nav-text">Amir Mahdi</span>
+                </a>
             </div>
             <div class="nav-menu" id="navMenu">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#projects" class="nav-link">Projects</a>
+                <a href="#competitions" class="nav-link">Competitions</a>
                 <a href="#articles" class="nav-link">Articles</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
@@ -57,19 +62,24 @@
             <h3 class="subsection-title">Work Experience</h3>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-date">2025 – Present</div>
                     <div class="timeline-content">
                         <h4>AI Research Engineer</h4>
-                        <p class="company">Tech Company Name</p>
-                        <p class="description">Working on cutting-edge AI systems and machine learning models.</p>
+                        <p class="company">Deep Computer Vision Co.</p>
+                        <p class="description">
+                            Developing state-of-the-art AI systems and machine learning models, with a strong focus on computer vision. Actively conducting research and contributing to academic publications.
+                        </p>
                     </div>
                 </div>
+
                 <div class="timeline-item">
-                    <div class="timeline-date">2021 - 2023</div>
+                    <div class="timeline-date">2024 – 2025</div>
                     <div class="timeline-content">
-                        <h4>Data Scientist</h4>
-                        <p class="company">Previous Company</p>
-                        <p class="description">Developed data pipelines and analytical solutions for business insights.</p>
+                        <h4>Data Science Intern</h4>
+                        <p class="company">Dr. Samati’s Lab, Sharif University of Technology</p>
+                        <p class="description">
+                            Collaborated on research in Agentic AI, working closely with academic teams to analyze data and develop intelligent agent-based models.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -80,11 +90,20 @@
             <h3 class="subsection-title">Education</h3>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">2019 - 2023</div>
+                    <div class="timeline-date">2021 - 2025</div>
                     <div class="timeline-content">
-                        <h4>Bachelor's Degree in Computer Science</h4>
-                        <p class="company">University Name</p>
-                        <p class="description">Focus on Artificial Intelligence and Machine Learning</p>
+                        <h4>Bachelor of Engineering - BE, Computer Engineering</h4>
+                        <p class="company">University of Guilan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Sep 2018 - Jun 2021</div>
+                    <div class="timeline-content">
+                        <h4>High School Diploma</h4>
+                        <p class="company">Alborz Highschool</p>
+                        <p class="description">Sep 2018 - Jun 2021</p>
                     </div>
                 </div>
             </div>
@@ -101,16 +120,17 @@
                 </div>
                 <div class="certificate-card">
                     <img src="images/cert2.jpg" alt="Certificate 2" class="certificate-image">
-                    <h4>Deep Learning Nanodegree</h4>
-                    <p>Udacity - 2022</p>
+                    <h4>Docker</h4>
+                    <p>Arjang institute  - 2024</p>
                 </div>
                 <div class="certificate-card">
                     <img src="images/cert3.jpg" alt="Certificate 3" class="certificate-image">
-                    <h4>AWS Certified Solutions Architect</h4>
-                    <p>Amazon - 2023</p>
+                    <h4>Data Analytics Bootcamp</h4>
+                    <p>Tehran University - 2022</p>
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- Projects Section -->
@@ -126,14 +146,14 @@
                 <div class="project-card">
                     <img src="images/project1.jpg" alt="Project 1" class="project-image">
                     <div class="project-content">
-                        <h3>AI-Powered Analytics Platform</h3>
-                        <p>A comprehensive analytics platform leveraging machine learning for predictive insights.</p>
+                        <h3>Persian Sentiment Analysis</h3>
+                        <p>This project introduces a custom Transformer-based architecture designed for sentiment analysis on Persian text reviews from the SnappFood dataset. By leveraging a pretrained BERT tokenizer for text encoding and fine-tuning a lightweight Transformer encoder, the model effectively classifies reviews as positive, neutral, or negative. This approach addresses challenges posed by Persian morphology and script, demonstrating the effectiveness of custom architectures for low-resource NLP tasks.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Django</span>
                         </div>
-                        <a href="https://github.com/yourusername/project1" target="_blank" class="project-link">
+                        <a href="https://github.com/Amirmahdiii82/sentiment_analysis" target="_blank" class="project-link">
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                     </div>
@@ -141,32 +161,72 @@
                 <div class="project-card">
                     <img src="images/project2.jpg" alt="Project 2" class="project-image">
                     <div class="project-content">
-                        <h3>Natural Language Processing Tool</h3>
-                        <p>Advanced NLP tool for sentiment analysis and text classification tasks.</p>
+                        <h3>Image Captioning</h3>
+                        <p>Automatically generating descriptive captions for images is a challenging task with applications in accessibility, image retrieval, and content generation. This project focuses on building a deep learning model using the Flickr8k dataset to generate accurate captions for images by combining Convolutional Neural Networks (CNNs) for image feature extraction and Recurrent Neural Networks (RNNs) for language generation.</p>
                         <div class="project-tech">
                             <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">Transformers</span>
-                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">OpenCV</span>
                         </div>
-                        <a href="https://github.com/yourusername/project2" target="_blank" class="project-link">
+                        <a href="https://github.com/Amirmahdiii82/Image_captioning" target="_blank" class="project-link">
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="images/project3.jpg" alt="Project 3" class="project-image">
+                    <img src="images/project3.jpg" alt="Project 4" class="project-image">
                     <div class="project-content">
-                        <h3>Computer Vision Application</h3>
-                        <p>Real-time object detection and tracking system for autonomous navigation.</p>
+                        <h3>Age Estimation with ResNet</h3>
+                        <p>This project aims to improve the accuracy and adaptability of age estimation models by leveraging the power of ResNet architectures. The current age estimation models, primarily based on PyTorch and convolutional layers, often face limitations in terms of accuracy and generalization across diverse datasets like UTKFace.</p>
                         <div class="project-tech">
                             <span class="tech-tag">OpenCV</span>
-                            <span class="tech-tag">YOLO</span>
-                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">PyTorch</span>
                         </div>
-                        <a href="https://github.com/yourusername/project3" target="_blank" class="project-link">
+                        <a href="https://github.com/Amirmahdiii82/Age-estimation-with-pytorch" target="_blank" class="project-link">
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                     </div>
+                    </div>
+                                    <div class="project-card">
+                        <img src="images/project4.jpg" alt="Project 4" class="project-image">
+                        <div class="project-content">
+                            <h3>Language Modeling with LSTM and AWD-LSTM on WikiText-2</h3>
+                            <p>
+                            Language modeling is a critical task in natural language processing (NLP) that involves predicting the next word in a sequence given its preceding context. This project builds and evaluates two models for this task:
+
+                            Base Model: A traditional LSTM-based language model.
+                            Improved Model: An AWD-LSTM model that incorporates advanced regularization techniques like weight dropping, variational dropout, and optimization strategies such as ASGD to enhance performance and generalization.
+                           </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Pytorch</span>
+                            </div>
+                            <a href="https://github.com/Amirmahdiii82/Language_modeling" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Competitions Section -->
+    <section id="competitions" class="section competitions-section">
+        <div class="container">
+            <h2 class="section-title">Competitions & Achievements</h2>
+            <p class="section-description">
+                Challenges tackled, skills demonstrated, and recognition earned through competitive programming and AI competitions.
+            </p>
+            <div class="competitions-grid">
+                <div class="competition-card">
+                    <img src="images/competition1.png" alt="CMI - Detect Behavior with Sensor Data" class="competition-image">
+                    <h4><a href="https://www.kaggle.com/competitions/cmi-detect-behavior-with-sensor-data">Kaggle - CMI Detect Behavior with Sensor Data</a></h4>
+                    <p class="competition-rank">🏆 Ongoing</p>
+                    <p>2025 - Predicting Body Focused Repetitive Behaviors from a Wrist-Worn Device</p>
+                </div>
+                <div class="competition-card">
+                    <img src="images/competition2.png" alt="MITSUI&CO. Commodity Prediction Challenge" class="competition-image">
+                    <h4><a href="https://www.kaggle.com/competitions/mitsui-commodity-prediction-challenge">Kaggle - MITSUI&CO. Commodity Prediction Challenge</a></h4>
+                    <p class="competition-rank">🏆 Ongoing</p>
+                    <p>2025 - Developing a robust model for accurate and stable prediction of commodity prices</p>
                 </div>
             </div>
         </div>
@@ -182,125 +242,93 @@
             </p>
             <div class="articles-list">
                 <article class="article-card">
-                    <div class="article-header">
-                        <h3 class="article-title">Deep Learning for Time Series Forecasting: A Survey</h3>
-                        <div class="article-meta">
-                            <span class="article-date">2024</span>
-                            <span class="article-venue">International Conference on Machine Learning</span>
+                    <img src="images/paper1.jpg" alt="DreamerAgent Paper" class="article-image">
+                    <div class="article-content">
+                        <div class="article-header">
+                            <h3 class="article-title">DreamerAgent: A Computational Model of the Lacanian Unconscious Using Memory-Driven Signifier Activation and Neurochemical Emotional Modeling</h3>
+                            <div class="article-meta">
+                                <span class="article-date">2024</span>
+                                <span class="article-venue">International Conference on Machine Learning</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="article-authors">
-                        <span class="author">Amir Mahdi</span>, <span class="author">Co-Author Name</span>
-                    </div>
-                    <p class="article-abstract">
-                        This paper presents a comprehensive survey of deep learning techniques for time series forecasting, 
-                        examining recent advances in attention mechanisms and their applications.
-                    </p>
-                    <div class="article-links">
-                        <a href="#" class="article-button paper-link">
-                            <i class="fas fa-file-pdf"></i> Paper
-                        </a>
-                        <a href="https://github.com/yourusername/article1" target="_blank" class="article-button code-link">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
-                </article>
-
-                <article class="article-card">
-                    <div class="article-header">
-                        <h3 class="article-title">Efficient Transformers: A Comparative Study</h3>
-                        <div class="article-meta">
-                            <span class="article-date">2023</span>
-                            <span class="article-venue">NeurIPS Workshop</span>
+                        <div class="article-authors">
+                            <span class="author">AmirMahdi Aramideh</span>, <span class="author">Tina Falak Doust Noshary</span>, <span class="author">Ehsan Kozegar</span>
                         </div>
-                    </div>
-                    <div class="article-authors">
-                        <span class="author">Amir Mahdi</span>, <span class="author">Research Team</span>
-                    </div>
-                    <p class="article-abstract">
-                        We propose novel approaches to improve transformer efficiency while maintaining performance, 
-                        demonstrating significant computational savings across various NLP tasks.
-                    </p>
-                    <div class="article-links">
-                        <a href="#" class="article-button paper-link">
-                            <i class="fas fa-file-pdf"></i> Paper
-                        </a>
-                        <a href="https://github.com/yourusername/article2" target="_blank" class="article-button code-link">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
-                </article>
-
-                <article class="article-card">
-                    <div class="article-header">
-                        <h3 class="article-title">Multi-Modal Learning for Autonomous Systems</h3>
-                        <div class="article-meta">
-                            <span class="article-date">2023</span>
-                            <span class="article-venue">IEEE Transactions on Pattern Analysis</span>
+                        <p class="article-abstract">
+                            This paper presents DreamerAgent, a novel AI framework that integrates Lacanian psychoanalytic theory with modern language and vision models to simulate a symbolic unconscious. Using dream narratives, emotional modeling, and memory-driven signifier activation, it enables AI agents to exhibit human-like symbolic complexity, contradiction, and emergent psychological behaviors.
+                        </p>
+                        <div class="article-links">
+                            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5369767" class="article-button paper-link">
+                                <i class="fas fa-file-pdf"></i> Paper
+                            </a>
+                            <a href="https://github.com/Amirmahdiii82/Dreamer_agent" target="_blank" class="article-button code-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
                         </div>
-                    </div>
-                    <div class="article-authors">
-                        <span class="author">Amir Mahdi</span>, <span class="author">Collaborators</span>
-                    </div>
-                    <p class="article-abstract">
-                        This work introduces a novel framework for multi-modal learning in autonomous systems, 
-                        combining visual, textual, and sensor data for improved decision-making.
-                    </p>
-                    <div class="article-links">
-                        <a href="#" class="article-button paper-link">
-                            <i class="fas fa-file-pdf"></i> Paper
-                        </a>
-                        <a href="https://github.com/yourusername/article3" target="_blank" class="article-button code-link">
-                            <i class="fab fa-github"></i> Code
-                        </a>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
+    <!-- Contact/Footer Section -->
+    <footer id="contact" class="footer-contact">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Get In Touch</h3>
-                    <p>Feel free to reach out for collaborations, research opportunities, or just a friendly chat about AI and technology.</p>
-                    <div class="contact-links">
-                        <a href="mailto:your.email@example.com" class="contact-link">
-                            <i class="fas fa-envelope"></i>
-                            <span>your.email@example.com</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="social-section">
-                    <h3>Connect With Me</h3>
-                    <div class="social-links">
-                        <a href="https://github.com/Amirmahdiii82" target="_blank" class="social-link github">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link linkedin">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://twitter.com/yourusername" target="_blank" class="social-link twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=u6Aw6mwAAAAJ&hl=en&authuser=1" target="_blank" class="social-link scholar">
-                            <i class="fas fa-graduation-cap"></i>
-                        </a>
-                    </div>
-                </div>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-description">Feel free to reach out for collaborations, research opportunities, or just a friendly chat about AI and technology.</p>
+            
+            <div class="contact-email">
+                <a href="mailto:amirmahdiaramideh.uni@gmail.com" class="email-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>amirmahdiaramideh.uni@gmail.com</span>
+                </a>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Amir Mahdi. All rights reserved.</p>
+            
+            <div class="social-links">
+                <a href="https://github.com/Amirmahdiii82" target="_blank" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/amirmahdiaramideh/" target="_blank" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.kaggle.com/amirmahdiaramideh" target="_blank" class="social-link" title="Kaggle">
+                    <i class="fab fa-kaggle"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=u6Aw6mwAAAAJ&hl=en&authuser=1" target="_blank" class="social-link" title="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <p class="copyright">© 2025 Amirmahdi Aramideh. Made with care, shared with the world.</p>
         </div>
     </footer>
+
+    <!-- Floating Contact Button -->
+    <div class="floating-contact">
+        <button class="floating-btn main-btn" id="floatingBtn">
+            <i class="fas fa-comment-dots"></i>
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="floating-menu">
+            <a href="https://github.com/Amirmahdiii82" target="_blank" class="floating-btn sub-btn github-btn" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/amirmahdiaramideh/" target="_blank" class="floating-btn sub-btn linkedin-btn" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.kaggle.com/amirmahdiaramideh" target="_blank" class="floating-btn sub-btn kaggle-btn" title="Kaggle">
+                <i class="fab fa-kaggle"></i>
+            </a>
+            <a href="mailto:amirmahdiaramideh.uni@gmail.com" class="floating-btn sub-btn email-btn" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=u6Aw6mwAAAAJ&hl=en&authuser=1" target="_blank" class="floating-btn sub-btn scholar-btn" title="Google Scholar">
+                <i class="fas fa-graduation-cap"></i>
+            </a>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

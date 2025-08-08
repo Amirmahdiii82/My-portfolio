@@ -201,6 +201,34 @@ document.addEventListener('DOMContentLoaded', function() {
         const year = new Date().getFullYear();
         footer.innerHTML = `&copy; ${year} Amir Mahdi. All rights reserved.`;
     }
+
+    // Floating Contact Button
+    const floatingBtn = document.getElementById('floatingBtn');
+    const floatingMenu = document.querySelector('.floating-menu');
+    
+    if (floatingBtn) {
+        floatingBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            this.classList.toggle('active');
+            floatingMenu.classList.toggle('active');
+        });
+
+        // Close floating menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.floating-contact')) {
+                floatingBtn.classList.remove('active');
+                floatingMenu.classList.remove('active');
+            }
+        });
+
+        // Animate floating button on page load
+        setTimeout(() => {
+            floatingBtn.style.animation = 'pulse 2s ease-in-out';
+            setTimeout(() => {
+                floatingBtn.style.animation = '';
+            }, 2000);
+        }, 1000);
+    }
 });
 
 // Add ripple effect styles dynamically
@@ -228,3 +256,5 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+const currentYear = new Date().getFullYear();
