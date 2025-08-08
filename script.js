@@ -8,41 +8,62 @@ document.addEventListener('DOMContentLoaded', function() {
         navMenu.classList.toggle('active');
     });
 
-    // Section navigation
+    // Section navigation with smooth scrolling
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('.section');
-
-    // Initially show home section
-    document.getElementById('home').classList.add('active');
 
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             
-            // Remove active class from all links and sections
+            // Remove active class from all links
             navLinks.forEach(l => l.classList.remove('active'));
-            sections.forEach(s => s.classList.remove('active'));
             
             // Add active class to clicked link
             this.classList.add('active');
             
-            // Show corresponding section
+            // Smooth scroll to corresponding section
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
             if (targetSection) {
-                targetSection.classList.add('active');
+                const navHeight = document.querySelector('.navbar').offsetHeight;
+                const targetPosition = targetSection.offsetTop - navHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
             }
             
             // Close mobile menu if open
             navMenu.classList.remove('active');
-            
-            // Smooth scroll to top
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
         });
     });
+
+    // Update active nav link based on scroll position
+    function updateActiveNav() {
+        const scrollPosition = window.scrollY;
+        const navHeight = document.querySelector('.navbar').offsetHeight;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - navHeight - 100;
+            const sectionBottom = sectionTop + section.offsetHeight;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                const currentId = section.getAttribute('id');
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+
+    // Update active nav on scroll
+    window.addEventListener('scroll', updateActiveNav);
+    updateActiveNav(); // Set initial active state
 
     // Add scroll effect to navbar
     let lastScroll = 0;

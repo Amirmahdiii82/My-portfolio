@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
@@ -33,11 +37,6 @@ body {
 .section {
     padding: 80px 20px;
     min-height: 100vh;
-    display: none;
-}
-
-.section.active {
-    display: block;
 }
 
 /* Navigation */
@@ -104,7 +103,6 @@ body {
 
 /* Hero Section */
 .home-section {
-    display: block;
     padding-top: 100px;
 }
 
