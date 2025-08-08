@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amir Mahdi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home">Amir Mahdi</a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#articles" class="nav-link">Articles</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-image-container">
+                    <img src="images/profile.jpg" alt="Amir Mahdi" class="hero-image">
+                </div>
+                <h1 class="hero-title">Amir Mahdi</h1>
+                <p class="hero-subtitle">
+                    Between data and decisions lies a space where systems learn to think.<br>
+                    This is a record of building, studying, and shaping that space through research and real-world experimentation.
+                </p>
+            </div>
+        </div>
+
+        <!-- Portfolio Overview -->
+        <div class="portfolio-overview">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-description">
+                A curated overview of work shaped by inquiry and experimentation spanning research projects, 
+                technical achievements, and selected credentials.
+            </p>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="experience-section">
+            <h3 class="subsection-title">Work Experience</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h4>AI Research Engineer</h4>
+                        <p class="company">Tech Company Name</p>
+                        <p class="description">Working on cutting-edge AI systems and machine learning models.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2023</div>
+                    <div class="timeline-content">
+                        <h4>Data Scientist</h4>
+                        <p class="company">Previous Company</p>
+                        <p class="description">Developed data pipelines and analytical solutions for business insights.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="education-section">
+            <h3 class="subsection-title">Education</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2023</div>
+                    <div class="timeline-content">
+                        <h4>Bachelor's Degree in Computer Science</h4>
+                        <p class="company">University Name</p>
+                        <p class="description">Focus on Artificial Intelligence and Machine Learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certificates -->
+        <div class="certificates-section">
+            <h3 class="subsection-title">Certificates</h3>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <img src="images/cert1.jpg" alt="Certificate 1" class="certificate-image">
+                    <h4>Machine Learning Specialization</h4>
+                    <p>Coursera - 2023</p>
+                </div>
+                <div class="certificate-card">
+                    <img src="images/cert2.jpg" alt="Certificate 2" class="certificate-image">
+                    <h4>Deep Learning Nanodegree</h4>
+                    <p>Udacity - 2022</p>
+                </div>
+                <div class="certificate-card">
+                    <img src="images/cert3.jpg" alt="Certificate 3" class="certificate-image">
+                    <h4>AWS Certified Solutions Architect</h4>
+                    <p>Amazon - 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-description">
+                Ideas take shape here, through systems that learn, adapt, and act.<br>
+                Each project reflects a process: from problem framing to methodological choices and final implementation.<br>
+                Technical notes, source code, and supplementary materials are shared where applicable.
+            </p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Project 1" class="project-image">
+                    <div class="project-content">
+                        <h3>AI-Powered Analytics Platform</h3>
+                        <p>A comprehensive analytics platform leveraging machine learning for predictive insights.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">React</span>
+                        </div>
+                        <a href="https://github.com/yourusername/project1" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/project2.jpg" alt="Project 2" class="project-image">
+                    <div class="project-content">
+                        <h3>Natural Language Processing Tool</h3>
+                        <p>Advanced NLP tool for sentiment analysis and text classification tasks.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">FastAPI</span>
+                        </div>
+                        <a href="https://github.com/yourusername/project2" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/project3.jpg" alt="Project 3" class="project-image">
+                    <div class="project-content">
+                        <h3>Computer Vision Application</h3>
+                        <p>Real-time object detection and tracking system for autonomous navigation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">YOLO</span>
+                            <span class="tech-tag">C++</span>
+                        </div>
+                        <a href="https://github.com/yourusername/project3" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="section articles-section">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <p class="section-description">
+                Research at the intersection of learning, language, and autonomy.<br>
+                Featured works include peer-reviewed papers, ongoing collaborations, and contributions to the broader AI research community.
+            </p>
+            <div class="articles-list">
+                <article class="article-card">
+                    <div class="article-header">
+                        <h3 class="article-title">Deep Learning for Time Series Forecasting: A Survey</h3>
+                        <div class="article-meta">
+                            <span class="article-date">2024</span>
+                            <span class="article-venue">International Conference on Machine Learning</span>
+                        </div>
+                    </div>
+                    <div class="article-authors">
+                        <span class="author">Amir Mahdi</span>, <span class="author">Co-Author Name</span>
+                    </div>
+                    <p class="article-abstract">
+                        This paper presents a comprehensive survey of deep learning techniques for time series forecasting, 
+                        examining recent advances in attention mechanisms and their applications.
+                    </p>
+                    <div class="article-links">
+                        <a href="#" class="article-button paper-link">
+                            <i class="fas fa-file-pdf"></i> Paper
+                        </a>
+                        <a href="https://github.com/yourusername/article1" target="_blank" class="article-button code-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-header">
+                        <h3 class="article-title">Efficient Transformers: A Comparative Study</h3>
+                        <div class="article-meta">
+                            <span class="article-date">2023</span>
+                            <span class="article-venue">NeurIPS Workshop</span>
+                        </div>
+                    </div>
+                    <div class="article-authors">
+                        <span class="author">Amir Mahdi</span>, <span class="author">Research Team</span>
+                    </div>
+                    <p class="article-abstract">
+                        We propose novel approaches to improve transformer efficiency while maintaining performance, 
+                        demonstrating significant computational savings across various NLP tasks.
+                    </p>
+                    <div class="article-links">
+                        <a href="#" class="article-button paper-link">
+                            <i class="fas fa-file-pdf"></i> Paper
+                        </a>
+                        <a href="https://github.com/yourusername/article2" target="_blank" class="article-button code-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-header">
+                        <h3 class="article-title">Multi-Modal Learning for Autonomous Systems</h3>
+                        <div class="article-meta">
+                            <span class="article-date">2023</span>
+                            <span class="article-venue">IEEE Transactions on Pattern Analysis</span>
+                        </div>
+                    </div>
+                    <div class="article-authors">
+                        <span class="author">Amir Mahdi</span>, <span class="author">Collaborators</span>
+                    </div>
+                    <p class="article-abstract">
+                        This work introduces a novel framework for multi-modal learning in autonomous systems, 
+                        combining visual, textual, and sensor data for improved decision-making.
+                    </p>
+                    <div class="article-links">
+                        <a href="#" class="article-button paper-link">
+                            <i class="fas fa-file-pdf"></i> Paper
+                        </a>
+                        <a href="https://github.com/yourusername/article3" target="_blank" class="article-button code-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Feel free to reach out for collaborations, research opportunities, or just a friendly chat about AI and technology.</p>
+                    <div class="contact-links">
+                        <a href="mailto:your.email@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>your.email@example.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="social-section">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/Amirmahdiii82" target="_blank" class="social-link github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/yourusername" target="_blank" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=yourid" target="_blank" class="social-link scholar">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Amir Mahdi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
