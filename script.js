@@ -164,13 +164,28 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(typeText, 500);
     }
 
-    // Add parallax effect to hero section
+    // Add parallax effect to hero section (with fade fix)
     const hero = document.querySelector('.hero');
+    const portfolioSection = document.querySelector('.portfolio-overview');
     if (hero) {
         window.addEventListener('scroll', function() {
             const scrolled = window.pageYOffset;
-            const parallaxSpeed = 0.5;
-            hero.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
+            const heroHeight = hero.offsetHeight;
+            const windowHeight = window.innerHeight;
+            
+            // Calculate opacity based on scroll position
+            let opacity = 1 - (scrolled / (heroHeight * 0.8));
+            opacity = Math.max(0, Math.min(1, opacity));
+            
+            // Apply fade effect to hero instead of parallax transform
+            hero.style.opacity = opacity;
+            
+            // Ensure portfolio section doesn't get affected
+            if (portfolioSection) {
+                portfolioSection.style.opacity = '1';
+                portfolioSection.style.position = 'relative';
+                portfolioSection.style.zIndex = '2';
+            }
         });
     }
 

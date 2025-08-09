@@ -129,6 +129,9 @@ body {
     background: linear-gradient(135deg, var(--light-bg) 0%, rgba(78, 125, 150, 0.1) 100%);
     border-radius: 20px;
     margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.3s ease;
 }
 
 .hero-content {
@@ -138,6 +141,9 @@ body {
 
 .hero-image-container {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-image {
@@ -147,6 +153,8 @@ body {
     object-fit: cover;
     border: 5px solid var(--white);
     box-shadow: 0 10px 30px rgba(78, 125, 150, 0.3);
+    display: block; /* Ensure image displays on mobile */
+    margin: 0 auto; /* Center the image horizontally */
 }
 
 .hero-title {
@@ -167,6 +175,11 @@ body {
     max-width: 900px;
     margin: 0 auto 60px;
     text-align: center;
+    position: relative;
+    z-index: 2;
+    background-color: var(--light-bg);
+    padding: 20px;
+    border-radius: 15px;
 }
 
 /* Section Titles */
@@ -825,6 +838,11 @@ body {
     transition-delay: 0.25s;
 }
 
+.floating-menu.active .sub-btn:nth-child(6) {
+    bottom: 380px;
+    transition-delay: 0.3s;
+}
+
 .sub-btn:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -870,6 +888,12 @@ body {
     }
 }
 
+/* Telegram button specific styles */
+.telegram-btn:hover {
+    background: #0088cc;
+    color: var(--white);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
@@ -899,6 +923,23 @@ body {
 
     .hero-subtitle {
         font-size: 1rem;
+    }
+
+    /* Fix hero image on mobile */
+    .hero-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .hero-image {
+        width: 150px;
+        height: 150px;
+        max-width: 100%;
+        display: block !important; /* Force display on mobile */
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 
     .projects-grid,
